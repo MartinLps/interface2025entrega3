@@ -1584,6 +1584,11 @@ body {
 
 .botonJugar:hover {
     transform: translateX(-50%) translateY(-5px);
+    background-color: #A78BFA;
+}
+
+.botonJugar:active {
+    background-color: #581C87;
 }
 
 
@@ -1742,7 +1747,7 @@ hr {
     width: 300px;
     height: auto;
     min-height: 200px;
-    background: #1E3A8A;
+    background-color: #1E3A8A;
     color: white;
     padding: 20px;
     display: flex;
@@ -1750,14 +1755,12 @@ hr {
     justify-content: flex-start;
     gap: 15px;
     border-radius: 12px 0 0 12px;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: -10px 0 30px #969696;
     opacity: 0;
     visibility: hidden;
     transform: translateX(20px);
     transition: all 0.4s ease;
     z-index: 1000;
-    pointer-events: none;
-    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-recomendado:hover .card-hover-info {
@@ -1790,11 +1793,16 @@ hr {
 
 .card-hover-info .hover-genre {
     font-size: 14px;
-    color: #60A5FA;
+    color: #ffffff;
+    background-color: #60A5FA;
     margin: 0;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    width: fit-content;
 }
 
 .card-hover-info .hover-description {
