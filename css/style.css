@@ -1022,11 +1022,25 @@ overflow: hidden;
 }
 
 .game-card p {
-    padding: 0 15px 15px;
+    padding: 0 15px 5px;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
     text-transform: capitalize;
     text-align: center;
+}
+
+.game-price {
+    padding: 0 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #667eea;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.game-price.free {
+    color: #4CAF50;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
 /* Game cards horizontales */
@@ -1880,4 +1894,3 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
-

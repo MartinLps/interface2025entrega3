@@ -473,26 +473,32 @@ function showSuccessAnimation() {
     // Manejar formulario de login
     const loginForm = document.getElementById('login-form');
     if (loginForm) {
+        console.log('Formulario de login encontrado');
         loginForm.addEventListener('submit', function(e) {
+            console.log('Submit del login interceptado');
             e.preventDefault(); // Prevenir el envío por defecto
             
-            const emailPhone = document.getElementById('email-telefono');
-            const password = document.getElementById('password');
-            
-        
-            // Mostrar animación de éxito y luego redirigir
             const submitBtn = loginForm.querySelector('.register-submit-btn');
-            submitBtn.textContent = 'Procesando...';
-            submitBtn.classList.add('success');
+            console.log('Botón de submit encontrado:', submitBtn);
             
-            setTimeout(() => {
-                submitBtn.textContent = 'Exitoso!';
-            }, 700);
-            
-            setTimeout(() => {
-                window.location.href = 'Home.html';
-            }, 1200);
+            if (submitBtn) {
+                submitBtn.textContent = 'Procesando...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.textContent = 'Exitoso!';
+                    
+                    setTimeout(() => {
+                        console.log('Intentando redirección a Home.html');
+                        console.log('Ubicación actual:', window.location.href);
+                        window.location.href = 'Home.html';
+                    }, 800);
+                }, 1000);
+            }
         });
+        console.log('Event listener del login agregado correctamente');
+    } else {
+        console.log('No se encontró el formulario de login');
     }
 });
 
