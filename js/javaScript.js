@@ -464,7 +464,7 @@ function showSuccessAnimation() {
                 }, 700);
             
                 setTimeout(() => {
-                    window.location.href = 'Home.html';
+                    window.location.href = 'Login.html';
                 }, 1200);
             }
         });
