@@ -1630,10 +1630,23 @@ body {
 }
 .breadcrumbs {
     color: #2DD4BF;
-    align-self: flex-start;
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
+    margin: 100px auto 20px auto;
     padding: 10px 0;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+}
+
+.breadcrumbs a {
+    color: #2DD4BF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #5EEAD4;
+    text-decoration: underline;
 }
 .ayuda {
     color: #fff;
