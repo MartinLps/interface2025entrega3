@@ -1627,7 +1627,8 @@ body {
 .breadcrumbs {
     color: #2DD4BF;
     font-family: 'Roboto', sans-serif;
-    padding-top: 80px;
+    padding-top: 90px;
+    padding-bottom: 10px;
     width: 100%;
     max-width: 1200px;
     display: block;
